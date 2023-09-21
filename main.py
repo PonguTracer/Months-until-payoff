@@ -13,4 +13,7 @@ while current_balance > 0:
     current_balance = current_balance - payment_amount
     num_payments = num_payments + 1
     
-print(f"{num_payments} payments")
+if num_payments != 1:
+    print(f"{num_payments} payments")
+else:
+    print(f"{num_payments} payment")
